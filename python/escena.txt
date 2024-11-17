@@ -1,0 +1,36 @@
+from tkinter import*
+from tkinter import ttk
+from tkinter import messagebox
+import pymongo
+import pymongo.errors
+
+MONGO_HOST = "localhost"
+MONGO_PUERTO = "27017"
+MONGO_TIEMPO_FUERA = 1000
+
+MONGO_URI = "mongodb://"+MONGO_HOST+":"+MONGO_PUERTO+"/"
+
+MONGO_BASEDATOS="Europa_League"
+MONGO_COLECCION="arbitros"
+
+try:
+    cliente=pymongo.MongoClient(MONGO_URI,serverSelectionTimeoutMS=MONGO_TIEMPO_FUERA)
+    baseDatos=cliente[MONGO_BASEDATOS]
+    coleccion=baseDatos[MONGO_COLECCION]
+    for documento in coleccion.find():
+        print(documento["nombre"])
+    #cliente.server_info()
+    #print("coneccion a mongo exitosa")
+    cliente.close()
+except pymongo.errors.ServerSelectionTimeoutError as errorTiempo:
+    print("Tiempo exedido "+errorTiempo)
+except pymongo.errors.ConnectionFailure as errorConexion:
+    print("fallo al conectarse a mongodb"+errorConexion)
+
+ventana=Tk()
+tabla=ttk.Treeview(ventana,colums=6)
+tabla.grid(row=1,column=0,columnspan=6)
+tabla.heading("#0",text="id")
+tabla.heading("#1",text="Nombre")
+
+ventana.mainloop()
