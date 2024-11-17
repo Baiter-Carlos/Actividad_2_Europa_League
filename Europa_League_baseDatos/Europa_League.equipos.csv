@@ -1,0 +1,13 @@
+_id,nombre,liga,pais,ciudad,posicion_tabla,puntos,encuentros_disputados,jugadores[0],jugadores[1],jugadores[2],entrenador,posicion
+673a1df6b6fe0b15e6690399,Sevilla FC,La Liga,España,Sevilla,1,75,38,673a1df6b6fe0b15e6690393,673a1df6b6fe0b15e6690394,673a1df6b6fe0b15e6690395,673a1df6b6fe0b15e6690301,
+673a1df6b6fe0b15e669039a,Manchester United,Premier League,Inglaterra,Manchester,2,72,38,673a1df6b6fe0b15e6690396,673a1df6b6fe0b15e6690397,673a1df6b6fe0b15e6690398,673a1df6b6fe0b15e6690302,
+673a1df6b6fe0b15e669039b,West Ham United,Premier League,Inglaterra,Londres,3,65,38,673a1df6b6fe0b15e6690399,673a1df6b6fe0b15e669039a,673a1df6b6fe0b15e669039b,673a1df6b6fe0b15e6690303,
+673a1df6b6fe0b15e669039c,FC Barcelona,La Liga,España,Barcelona,4,67,38,673a1df6b6fe0b15e669039d,673a1df6b6fe0b15e669039e,673a1df6b6fe0b15e669039f,673a1df6b6fe0b15e6690304,
+673a1df6b6fe0b15e669039d,Atlético de Madrid,La Liga,España,Madrid,5,66,38,673a1df6b6fe0b15e66903a0,673a1df6b6fe0b15e66903a1,673a1df6b6fe0b15e66903a2,673a1df6b6fe0b15e6690305,
+673a1df6b6fe0b15e669039e,Napoli,Serie A,Italia,Nápoles,6,60,38,673a1df6b6fe0b15e66903a3,673a1df6b6fe0b15e66903a4,673a1df6b6fe0b15e66903a5,673a1df6b6fe0b15e6690306,
+63b1d85f6f5b3d1e8c1b8e7a,Sevilla FC,,,,,75,38,,,,,1
+63b1d85f6f5b3d1e8c1b8e7b,Manchester United,,,,,72,38,,,,,2
+63b1d85f6f5b3d1e8c1b8e7c,West Ham United,,,,,65,38,,,,,3
+63b1d85f6f5b3d1e8c1b8e7d,FC Barcelona,,,,,67,38,,,,,4
+63b1d85f6f5b3d1e8c1b8e7e,Atlético de Madrid,,,,,66,38,,,,,5
+63b1d85f6f5b3d1e8c1b8e7f,Napoli,,,,,60,38,,,,,6

@@ -1,0 +1,4 @@
+_id,equipo_local._id,equipo_local.nombre,equipo_visitante._id,equipo_visitante.nombre,goles_local,goles_visitante,fecha,arbitro
+63b1d85f6f5b3d1e8c1b8e83,63b1d85f6f5b3d1e8c1b8e7a,Sevilla FC,63b1d85f6f5b3d1e8c1b8e7b,Manchester United,2,1,2024-05-01T20:00:00.000Z,673a1cb45cb1798267346a30
+63b1d85f6f5b3d1e8c1b8e84,63b1d85f6f5b3d1e8c1b8e7c,West Ham United,63b1d85f6f5b3d1e8c1b8e7d,FC Barcelona,1,3,2024-05-02T20:00:00.000Z,673a1cb45cb1798267346a31
+63b1d85f6f5b3d1e8c1b8e85,63b1d85f6f5b3d1e8c1b8e7e,Atlético de Madrid,63b1d85f6f5b3d1e8c1b8e7f,Napoli,2,0,2024-05-03T20:00:00.000Z,673a1cb45cb1798267346a32
