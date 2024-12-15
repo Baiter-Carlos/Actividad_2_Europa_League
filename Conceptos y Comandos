@@ -1,0 +1,33 @@
+1. Iniciar los servidores de configuración
+mongod --configsvr --replSet configReplSet --port 27019 --dbpath "C:\data1\db\config" --bind_ip_all
+
+2. Iniciar los servidores de fragmentación
+mongod --shardsvr --replSet shardReplSet --port 27018 --dbpath "C:\data1\db\shard1" --bind_ip_all
+
+3. Iniciar el mongos (enrutador)
+mongos --configdb configReplSet/localhost:27019 --bind_ip_all --port 27017
+
+4. Conectar al enrutador (mongos)
+mongosh --host localhost --port 27017
+
+5. Configurar la réplica de la base de datos de configuración
+rs.initiate({
+  _id: "configReplSet",
+  members: [{ _id: 0, host: "localhost:27019" }]
+});
+
+6. Agregar los fragmentos al conjunto de sharding
+
+sh.addShard("shardReplSet/localhost:27018");
+
+7. Habilitar el sharding en la base de datos
+
+sh.enableSharding("Torneo_Copa");
+
+8. Elegir la clave de particionamiento (Shard Key)
+
+sh.shardCollection("Torneo_Copa.partidos", { "fecha_partido": 1 });
+
+9. Verificación de la partición de la colección
+
+sh.status();
